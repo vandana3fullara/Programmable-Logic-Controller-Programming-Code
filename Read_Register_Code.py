@@ -1,8 +1,8 @@
 from pyModbusTCP.client import ModbusClient
 
 # Define Here Your Connection Credential
-plc_ip = "192.168.0.5"  # PLC IP 
-plc_port = 502           # TCP PORT
+plc_ip = "192.168.0.5"  
+plc_port = 502          
 
 # Create A Modbus Client
 client = ModbusClient(host=plc_ip, port=plc_port)
