@@ -1,8 +1,8 @@
 from pyModbusTCP.client import ModbusClient
 
 # Define Your Connection Credential
-plc_ip = "192.168.0.5"  # PLC IP
-plc_port = 502           # TCP PORT
+plc_ip = "192.168.0.5"  
+plc_port = 502           
 
 # Create A Modbus Client
 client = ModbusClient(host=plc_ip, port=plc_port)
@@ -12,7 +12,7 @@ if client.open():
     # Define The Coil Address You Want To Write To
     coil_address = 2048  # Replace With Your Desired Coil Address
 
-    # Define The Value You Want To Write To The Coil (0 For OFF, 1 For ON)
+    # Define The Value You Want To Write To The Coil (0 For Off, 1 For On)
     value_to_write = 1  # Replace With Your Desired Value (0 Or 1)
 
     # Write A Single Coil
